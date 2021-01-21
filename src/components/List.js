@@ -6,24 +6,22 @@ class List extends Component {
         super(props)
         this.state = {
             groceryItems: [
-                { id: 1, title: "Appels" },
-                { id: 2, title: "Pak melk" },
-                { id: 3, title: "Pasta" },
-                { id: 4, title: "Banaan" }
+                { id: 1, title: "Brood" },
+                { id: 2, title: "Banaan" },
+                { id: 3, title: "Appel" },
+                { id: 4, title: "Melk" }
             ]
-        } 
-    }   
-    //const groceryComponents = groceryItems.map(item => <ListItem key={item.id} title={item}/>)
+        }
+    }
     render() {
-        
+        const grocList = this.state.groceryItems.map(item => <ListItem key={item.id} item={item}/>)
         return (
             <div>
                 <ul>
-               
+                    {grocList}
                 </ul>
             </div>
-        )
+        )    
     }
 }
 export default List
-

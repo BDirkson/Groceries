@@ -1,11 +1,16 @@
 import React from "react"
 
 function ListItem(props) {
+    const item = props.item
     return (
-        <div>
-            <h3>{props.title} </h3>
-        </div>
+        <li
+            className="list-item"
+            key={item.id}
+            value={item.title}>
+            {item.title}
+        </li>
     )
 }
 
 export default ListItem
+
