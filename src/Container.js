@@ -24,11 +24,11 @@ class Container extends Component {
             <div className="Container">
   
                 <Grocerylist 
-                    className="grocery-list"
+                    className="Grocery-list"
                     list={this.state.groceryItems}
                     />
                 <ShoppingCart 
-                    className="grocery-list"
+                    className="Shopping-card"
                     list={this.state.shoppingListItems}
                     />
             </div>

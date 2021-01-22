@@ -8,9 +8,9 @@ function ListItem(props) {
             key={item.id}
             value={item.title}>
             {item.title}
-        </li>
+            </li>
     )
 }
 
-export default ListItem
 
+export default ListItem
