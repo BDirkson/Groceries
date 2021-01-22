@@ -17,7 +17,14 @@ class Container extends Component {
                 { id: 2, title: "Yoghurt" }
             ]
         }
+        this.handleClickGroceryItem = this.handleClickGroceryItem.bind(this)
     }
+
+
+    handleClickGroceryItem = (title) => {
+        console.log( "yessssss")
+        console.log (title)
+        }
 
     render (){
         return (
@@ -26,11 +33,13 @@ class Container extends Component {
                 <Grocerylist 
                     className="Grocery-list"
                     list={this.state.groceryItems}
+                    onClick={this.handleClickGroceryItem}
                     />
                 <ShoppingCart 
                     className="Shopping-card"
                     list={this.state.shoppingListItems}
                     />
+                
             </div>
           )
     }

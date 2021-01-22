@@ -8,7 +8,7 @@ class List extends Component {
                 <ListItem
                     key={item.id}
                     item={item}
-                    //click={this.props.click}
+                    onClick={this.props.onClick}
                 />)
         return (
             <div>

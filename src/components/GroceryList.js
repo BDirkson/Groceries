@@ -5,7 +5,10 @@ function Grocerylist (props) {
     return (
         <div className='grocery-list'>
             <h1>Boodschappenlijst</h1>
-            <List list={props.list} />
+            <List 
+                list={props.list}
+                onClick={props.onClick}
+                 />
         </div>
     )
 }

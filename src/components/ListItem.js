@@ -6,7 +6,9 @@ function ListItem(props) {
         <li
             className="list-item"
             key={item.id}
-            value={item.title}>
+            value={item.title}
+            onClick={() => props.onClick(item.title)}
+            >
             {item.title}
             </li>
     )

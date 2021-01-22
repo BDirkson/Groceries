@@ -5,7 +5,10 @@ function ShoppingCart ( props ) {
     return (
         <div className='shoppnig-card'>
             <h1>Winkelmand</h1>
-            <List list={props.list} />
+            <List 
+                list={props.list}
+                onClick={props.onClick}
+                 />
         </div>
     )
 }
