@@ -8,11 +8,14 @@ function ListItem(props) {
             key={item.id}
             value={item.title}
             onClick={() => props.onClick(item.title)}
-            >
-            {item.title}
-            </li>
+        >
+            <div> {item.title} </div>
+            <div> {item.amount} </div> 
+        </li>
     )
 }
 
 
 export default ListItem
+
+// listItem = okay alleen nog check op amount die per 2 gaat

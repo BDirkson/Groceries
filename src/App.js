@@ -17,4 +17,4 @@ function App() {
 
 export default App;
 
-// container is okay
+// App is okay
